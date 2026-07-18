@@ -63,8 +63,18 @@ version is bumped or upstream changes are merged.**
   standalone 20-skill line is preserved at tag v9.9.12 and development
   continues in successor repo **`aaron-he-zhu/aaron-marketing-skills`**
   (120 skills across 7 disciplines, Apache-2.0, actively pushed as of
-  2026-07-18). Post-freeze upstream commits are signpost/banner/tombstone
-  docs only — no material code changes → **no pin bump** per Mode B.
+  2026-07-18). **Correction (2026-07-18, same-day re-check):** the freeze
+  applies to *releases*, not the branch. After the freeze notice, upstream
+  `main` kept receiving "sync: umbrella vN" commits mirroring the successor
+  project's content: as of 2026-07-18 it is 7 commits ahead of the audited
+  baseline `1608176f`, touching ~180 files — including the three FI-used
+  skills under `build/`, every `scripts/connectors/*.py`, and `hooks/` —
+  with **no new tag or release** (v9.9.12 remains the only one, ever). An
+  earlier draft of this entry called the post-freeze delta "docs only";
+  a file-level compare disproved that. Decision unchanged: **no pin bump** —
+  adopting `main` would be an unplanned intake of the successor project's
+  restructured content, not a maintenance update of the audited v9.9.12
+  line; it belongs to the successor-repo intake decision (below).
 - The tag's history-rewrite warning verifies: the originally-claimed pin
   `5643f5a` / `audited-2026-05-04` does not exist in upstream history
   (`git cat-file -e 5643f5a^{commit}` fails after fetching upstream), and
