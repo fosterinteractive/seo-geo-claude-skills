@@ -6,6 +6,25 @@ version is bumped or upstream changes are merged.**
 
 ---
 
+## Checked — 2026-10-31 (no bump)
+
+- **Pin:** unchanged, tag `audited-2026-07-18` = `f594142` (upstream v9.9.12 plus FI's audit record).
+- **Upstream now:** `main` at `3a1578a` ("sync: umbrella v20.1.0"), 8 commits since the July check.
+  - `main` is now a signpost. The standalone code is gone from it (177 files changed, about 19,000 lines removed),
+    and SKILL.md tombstones point to the old skill paths.
+  - Development continues in the successor repository `aaron-marketing-skills`. The standalone line stays frozen at
+    tag v9.9.12.
+- **Decision:** no material change to adopt. Nothing in the delta replaces or fixes code in the pinned line. The
+  successor repository is a different product and was not reviewed; adopting it would be a new intake.
+- **Staleness:** the frozen line gets no further fixes or guidance updates, so its SEO and GEO guidance drifts from
+  Google's current documentation. Expected stale by about Jan 2027. **Re-audit or retire by 2027-01-31.**
+- **Recommendation:** check whether the three skills FI uses from this line (`meta-tags-optimizer`,
+  `schema-markup-generator`, `geo-content-optimizer`) are covered by `claude-seo` 2.5.0 (`seo-schema`, `seo-geo`,
+  pinned `audited-2026-10-31`). If they are, retire this pin instead of re-auditing it.
+- **Checked by:** Nick (Foster Interactive), with Claude Code.
+
+---
+
 ## Formalization & pin verification — 2026-07-18 (no bump)
 
 - **What this entry is:** the 2026-06-30 audit below was originally recorded
